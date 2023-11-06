@@ -16,7 +16,7 @@ centerPoint = f"{args.latitude},{args.longitude}"
 if args.key is not None:
     BingMapsKey = args.key
 elif BingMapsKey == "":
-    print("No Bing Maps jey was specified. Set the BingMapsKey variable or use the -k argument!")
+    print("No Bing Maps key was specified. Set the BingMapsKey variable or use the -k argument!")
     exit(1)
 
 url = f"https://dev.virtualearth.net/REST/V1/Imagery/Metadata/birdseyeV2/{centerPoint}?o=json&key={BingMapsKey}"
